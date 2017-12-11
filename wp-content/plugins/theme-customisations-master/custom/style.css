@@ -1,0 +1,34 @@
+/**
+ * Add any custom CSS here.
+ *
+ * This file will be loaded after all other theme stylesheets.
+ */
+
+ .home .site-header {
+    margin-bottom: 0 !important;
+ }
+
+ div#post-24 { padding-top : 0 !important}
+
+ div#post-24 .entry-header {
+    display: none !important;
+ }
+
+ .page-template-template-homepage .entry-content, .page-template-template-homepage .entry-header {
+     max-width: 100% !important;
+ }
+ 
+ @media screen and (min-width: 768px) {
+    .site-header {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+    }
+
+    .site-header .site-branding, .site-header .site-search{
+        margin-bottom: 0.618em !important;
+    }
+
+    .deli-primary-navigation {
+        margin-bottom: 0 !important;
+    }
+ }
