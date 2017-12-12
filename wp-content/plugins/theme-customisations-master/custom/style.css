@@ -17,6 +17,14 @@
  .page-template-template-homepage .entry-content, .page-template-template-homepage .entry-header {
      max-width: 100% !important;
  }
+
+ .site-info {
+     padding-bottom: 0 !important;
+ }
+
+ .wp-subscribe-wrap {
+     background-color: #E93F36 !important;
+ }
  
  @media screen and (min-width: 768px) {
     .site-header {
@@ -31,4 +39,9 @@
     .deli-primary-navigation {
         margin-bottom: 0 !important;
     }
+
+    .site-content > .col-full {
+        margin-bottom: 0 !important;
+    }
  }
+

@@ -64,4 +64,4 @@
 		 *
 		 * @hooked woocommerce_breadcrumb - 10
 		 */
-		do_action( 'storefront_content_top' );
+		do_action( 'storefront_content_top' );		
