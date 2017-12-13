@@ -30,6 +30,10 @@
  .social_icons {
      display: none;
  }
+
+ .order-online {
+     padding: 30px 0 60px 0;
+ }
  
  @media screen and (min-width: 768px) {
     .site-header {
@@ -73,3 +77,317 @@
     }
  }
 
+.container-fluid, .moto-cell {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.moto-container_content_5914c1863 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    border-style: none;
+    border-color: #fff;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-top-width: 0px;
+    border-bottom-width: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    background-image: url(../images/mt-0975-home-parallax01.jpg);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+.moto-container_content_591a9d591 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    border-style: none;
+    border-color: #fff;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-top-width: 0px;
+    border-bottom-width: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    background-image: url(../images/mt-0975-home-parallax02.png);
+    background-size: cover;
+    background-position: left top;
+    background-repeat: no-repeat;
+}
+
+.moto-widget-button .moto-widget-button-link {
+    position: relative;
+    text-align: center;
+    z-index: 1;
+    -webkit-backface-visibility: hidden;
+    transition: all .3s;
+    line-height: 1;
+    border-width: 2px;
+    border-style: solid;
+    padding: 15.5px 36.5px;
+    border-radius: 35px;
+    letter-spacing: 0.8px;
+}
+
+.moto-widget-button.moto-preset-default .moto-widget-button-link {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #ffffff;
+    background-color: #ec5353;
+    border-color: #ec5353;
+}
+
+.moto-widget-button .moto-widget-button-link {
+    position: relative;
+    text-align: center;
+    z-index: 1;
+    -webkit-backface-visibility: hidden;
+    transition: all .3s;
+    line-height: 1;
+    border-width: 2px;
+    border-style: solid;
+    padding: 15.5px 36.5px;
+    border-radius: 35px;
+    letter-spacing: 0.8px;
+}
+
+.moto-spacing-top-medium {
+    padding-top: 30px;
+}
+
+.moto-spacing-right-auto {
+    padding-right: initial;
+}
+
+.moto-spacing-left-auto {
+    padding-left: initial;
+}
+
+.moto-spacing-bottom-auto {
+    padding-bottom: initial;
+}
+
+.moto-spacing-top-medium {
+    padding-top: 30px;
+}
+
+@media (max-width: 1039px) {
+    .moto-text_system_5 {
+        font-size: 40px;
+        line-height: 1;
+        letter-spacing: 0px;
+    }    
+}
+
+.moto-text_system_5 {
+    font-weight: 400;
+    font-style: normal;
+    font-family: 'Changa One', display;
+    color: #2b2c2f;
+    font-size: 70px;
+    line-height: 1;
+    letter-spacing: 0px;
+}
+
+@media (max-width: 767px) {
+    .moto-text_system_7 {
+        font-size: 27px;
+        line-height: 1.2;
+        letter-spacing: 0px;
+    }
+}
+
+@media (max-width: 1039px) {
+    .moto-text_system_7 {
+        font-size: 19px;
+        line-height: 1.2;
+        letter-spacing: 0px;
+    }    
+}
+
+.moto-text_system_7 {
+    font-weight: 400;
+    font-style: normal;
+    font-family: 'Changa One', display;
+    color: #2b2c2f;
+    font-size: 34px;
+    line-height: 1.2;
+    letter-spacing: 0px;
+}
+
+hr {
+    display: block;
+    unicode-bidi: isolate;
+    -webkit-margin-before: 0.5em;
+    -webkit-margin-after: 0.5em;
+    -webkit-margin-start: auto;
+    -webkit-margin-end: auto;
+    overflow: hidden;
+    border-style: inset;
+    border-width: 1px;
+}
+Inherited from div.moto-widget.moto-widget-divider.moto-preset-3.moto-align-left.moto-spacing-top-medium.moto-spacing-right-auto.moto-spacing-bottom-medium.moto-spacing-left-auto
+.moto-widget-divider {
+    font-size: 0;
+}
+
+.moto-align-left {
+    text-align: left;
+}
+
+p {
+    margin: 0 0 10px;
+}
+
+.moto-color5_5 {
+    color: #ffffff;
+}
+
+@media (max-width: 767px) {
+    .moto-spacing-bottom-medium {
+        padding-bottom: 20px;
+    }
+    .moto-spacing-top-medium {
+        padding-top: 20px;
+    }    
+}
+
+@media (max-width: 1039px) {
+    .moto-spacing-bottom-medium {
+        padding-bottom: 30px;
+    }
+    .moto-spacing-top-medium {
+        padding-top: 30px;
+    }
+        
+}
+
+.moto-spacing-right-auto {
+    padding-right: initial;
+}
+.moto-spacing-left-auto {
+    padding-left: initial;
+}
+.moto-spacing-bottom-medium {
+    padding-bottom: 30px;
+}
+.moto-spacing-top-medium {
+    padding-top: 30px;
+}
+.moto-widget-divider {
+    font-size: 0;
+}
+.moto-align-left {
+    text-align: left;
+}
+.moto-widget {
+    position: relative;
+}
+
+.moto-widget-divider.moto-preset-3 .moto-widget-divider-line {
+    border-top-width: 2px;
+    border-top-style: solid;
+    border-top-color: #f9b129;
+}
+.moto-widget-divider .moto-widget-divider-line {
+    margin: 0;
+    display: inline-block;
+    width: 100%;
+}
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid #eee;
+}
+hr {
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 0;
+}
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid #eee;
+}
+hr {
+    height: 0;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+@media screen and (max-width: 1039px) {
+    .moto-widget-button .moto-widget-button-link.moto-size-medium {
+        padding: 14px 40px;
+    }
+}
+
+.moto-widget-button .moto-widget-button-link.moto-size-medium {
+    padding: 16px 66px;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 1039px) {
+    .moto-widget-button .moto-widget-button-link {
+        padding: 12px 25px;
+    }
+}
+
+.moto-widget-button .moto-widget-button-link {
+    position: relative;
+    text-align: center;
+    z-index: 1;
+    -webkit-backface-visibility: hidden;
+    transition: all .3s;
+    line-height: 1;
+    border-width: 2px;
+    border-style: solid;
+    padding: 15.5px 36.5px;
+    border-radius: 35px;
+    letter-spacing: 0.8px;
+}
+.moto-widget-button .moto-widget-button-link {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.moto-spacing-right-auto {
+    padding-right: initial;
+}
+
+.moto-spacing-left-auto {
+    padding-left: initial;
+}
+
+.moto-spacing-bottom-auto {
+    padding-bottom: initial;
+}
+
+.moto-spacing-top-auto {
+    padding-top: initial;
+}
+
+.moto-align-center {
+    text-align: center;
+}
