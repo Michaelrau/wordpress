@@ -19,7 +19,8 @@
  }
 
  .site-info {
-     padding-bottom: 0 !important;
+     padding: 1.617924em 0 0 0 !important;
+     float: left !important;     
  }
 
  .wp-subscribe-wrap {
@@ -27,7 +28,6 @@
  }
 
  .social_icons {
-     clear: both;
      display: none;
  }
  
@@ -51,7 +51,25 @@
 
     .social_icons {
         display: block;
-        float: right;        
+        float: right;         
+    }
+
+    .site-footer .social_icons {
+        padding-top: 1.617924em !important;
+    }
+
+    .site-header .social_icons {
+        padding-top: 17px !important;
+    }
+
+    .woocommerce-active .site-header .site-search {
+        width: 30.73913% !important;
+        float: left !important;
+        padding-top: 25px !important;
+    }
+
+    .site-header .site-branding, .site-header .site-search {
+        padding-top: 8px !important;
     }
  }
 
