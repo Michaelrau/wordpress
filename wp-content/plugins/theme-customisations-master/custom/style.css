@@ -391,3 +391,69 @@ hr {
 .moto-align-center {
     text-align: center;
 }
+
+.special-post .post-title {
+    font-weight: bold;
+    padding-bottom: 32px;    
+}
+
+.special-post .post-buttons {    
+    margin: 32px auto;
+}
+
+.special-post .post-buttons a {
+    border-radius: 25px;
+    padding: 10px 25px;
+    font-weight: bold;
+    font-style: normal;
+    color: #ffffff;
+    background-color: #ec5353;
+    border-color: #ec5353;
+}
+
+/* Start layout for responsive */
+
+/* smartphones, iPhone, portrait 480x320 phones */
+@media only screen and (max-width:960px) {  
+    .special-post .feature-image { 
+        clear: both;
+        width: 100%;                
+    }
+
+    .special-post .post-container {
+        padding-top: 32px;
+    }   
+}
+
+/* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. 
+@media only screen and (min-width:481px) and (max-width: 640px)  {  
+
+}
+*/
+
+/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones
+@media only screen and (min-width:641px) and (max-width: 960px)  {  
+
+}
+*/
+
+/* tablet, landscape iPad, lo-res laptops ands desktops */
+@media only screen and (min-width:961px) and (max-width: 1024px) {  
+
+}
+
+/* big landscape tablets, laptops, and desktops */
+@media only screen and (min-width:1025px) {  
+    .special-post .feature-image {
+        width: 75%;
+        background-repeat: no-repeat; 
+        background-size: cover;
+        float: left;        
+    }
+}
+
+/* hi-res laptops and desktops 
+@media only screen and (min-width:1281px){  
+    
+}
+*/
