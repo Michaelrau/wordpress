@@ -10,7 +10,7 @@
  * This file will be loaded after all other theme stylesheets.
  */
 
-.row { clear: both; }
+.row { clear: both; display: flex; }
 
 .col-25 {
     width: 25%;    
@@ -22,6 +22,74 @@
 
 .col-100 {
     width: 100%;
+}
+
+.widget {
+    margin: 0 0 1.706326em !important;
+}
+
+.site-header { padding-top: 0 !important; }
+
+.site-header .site-branding, .site-header .site-search, .site-header, .site-header .site-logo-anchor, .site-header .site-logo-link, .site-header .custom-logo-link {
+    margin-bottom: 0.618em !important;
+}
+
+.site-search { display: none !important; }
+
+.social_icons { float: right; }
+
+.site-content > .col-full {
+    margin-bottom: 0 !important;
+}
+
+.site-footer {
+    font-family: 'Oswald', sans-serif;
+}
+
+.site-footer span.label {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0px;
+    font-weight: bold;
+    font-style: normal;
+    color: #ffffff;
+    padding-right: 10px;
+}
+
+.site-footer .footer-widgets {
+    display: flex;
+}
+
+.site-footer .social_icons { padding-top: 20px }
+
+.footer-widgets.col-3 .block { margin-right: 0 !important; }
+
+.footer-widget-2 {
+    margin: 0 20px;
+    padding: 0 40px;
+    border-left: 2px dotted rgba(0, 0, 0, 0.1);
+    border-right: 2px dotted rgba(0, 0, 0, 0.1);
+}
+
+.footer-widget-2 span.header, .footer-widget-3 span.widget-title {
+    font-size: 32px;
+    line-height: 1.2;
+    letter-spacing: 0px;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.links {
+    padding-top: 48px;
+}
+
+.footer-widget-3 {
+    padding-left: 40px;
+}
+
+.site-footer .widget .widget-title, .widget .widgettitle {
+    padding: 0 !important;
+    border-bottom: none !important;
 }
 
 .div-left { float: left; }
@@ -44,8 +112,6 @@
     margin-bottom: 0 !important;
 }
 
-div#post-24 { padding-top : 0 !important}
-
 div#post-24 .entry-header {
     display: none !important;
 }
@@ -63,8 +129,13 @@ div#post-24 .entry-header {
     background-color: #E93F36 !important;
 }
 
-.social_icons {
-    display: none;
+.special-images .row {
+    margin-left: -15px;
+    margin-right: -15px;    
+}
+
+.special-images .col {
+    padding: 15px;
 }
 
 .order-online {
@@ -196,7 +267,7 @@ div#post-24 .entry-header {
 
 /* Start layout for responsive */
 
-@media only screen and (max-width:320px) {
+@media only screen and (max-width:320px) {    
     .div-text-content {
         padding: 0 1px !important;        
     }
@@ -212,7 +283,55 @@ div#post-24 .entry-header {
 
 /* smartphones, iPhone, portrait 480x320 phones */
 @media only screen and (max-width:640px) { 
+
+    .social_icons { display: none; }
+
+    .site-footer .footer-widgets {
+        display: block;
+    }
     
+    .site-footer span.label {
+        font-size: 13px;
+    }
+
+    .footer-widget-2 {
+        margin: 20px 0;
+        padding: 20px 0;
+        border-left: none;
+        border-right: none;
+        border-top: 1px dotted;
+        border-bottom: 1px dotted;
+    }
+
+    .footer-widget-2 span.header, .footer-widget-3 span.widget-title {
+        font-size: 19px;
+    }
+
+    .links {
+        padding-top: 16px;
+    }
+
+    .footer-widget-3 {
+        padding-left: 0;
+    }
+
+    .es_textbox_class {
+        width: 100%;
+    }
+    
+    div#post-24 { 
+        padding-top : 0 !important;
+        padding-bottom: 0 !important;
+        margin-bottom: 0 !important;
+    }
+
+    .special-images .row {
+        display: block;
+    }
+    .special-images .col {
+        width: 100%;
+    }
+
     .order-online .container-center {
         padding: 30px 15px;
     }
@@ -319,8 +438,14 @@ div#post-24 .entry-header {
     }
 }
 
-/* tablet, landscape iPad, lo-res laptops ands desktops */
+/* tablet, landscape iPad, lo-res laptops ands desktops
 @media only screen and (min-width:961px) {  
+    
+}
+*/
+
+/* hi-res laptops and desktops */
+@media only screen and (min-width:961px){  
     .special-post .post-title {
         font-weight: bold;
         font-size: 21px;
@@ -337,10 +462,13 @@ div#post-24 .entry-header {
     .special-post .post-buttons {    
         margin-top: 30px;
     }
-}
 
-/* hi-res laptops and desktops */
-@media only screen and (min-width:1281px){  
+    div#post-24 { 
+        padding-top : 0 !important;
+        padding-bottom: 0 !important;
+        margin-bottom: 1.235801032em !important;
+    }
+
     .special-post .post-title {
         font-weight: bold;
         font-size: 36px;
