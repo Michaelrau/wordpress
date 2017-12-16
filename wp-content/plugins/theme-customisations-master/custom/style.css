@@ -1,16 +1,10 @@
-
-
-
-
-
-
 /**
  * Add any custom CSS here.
  *
  * This file will be loaded after all other theme stylesheets.
  */
 
-.row { clear: both; display: flex; }
+.row { clear: both; }
 
 .col-25 {
     width: 25%;    
@@ -37,6 +31,10 @@
 .site-search { display: none !important; }
 
 .social_icons { float: right; }
+
+.woocommerce-breadcrumb {
+    margin-bottom: 0 !important;
+}
 
 .site-content > .col-full {
     margin-bottom: 0 !important;
@@ -131,11 +129,28 @@ div#post-24 .entry-header {
 
 .special-images .row {
     margin-left: -15px;
-    margin-right: -15px;    
+    margin-right: -15px; 
+    display: flex;   
 }
 
 .special-images .col {
     padding: 15px;
+}
+
+.products-slideshow {
+    padding-top: 15px;
+    margin-top: 15px;
+    border: 1px dotted;
+    font-family: 'Oswald', sans-serif;
+}
+
+.wcps-items-excerpt, .wcps-items-category, .wcps-items-tag {
+    display: none;
+}
+
+.wcps-items-price {
+    color: #ec5353 !important;
+    font-size: 18px !important;
 }
 
 .order-online {
@@ -261,8 +276,32 @@ div#post-24 .entry-header {
     font-weight: bold;
     font-style: normal;
     color: #ffffff;
-    background-color: #ec5353;
-    border-color: #ec5353;
+    background-color: #0e7784;
+    border-color: #0e7784;
+}
+
+.es_textbox_class {
+    width: 100% !important;
+}
+
+.deli-primary-navigation {
+    margin-bottom : 0 !important;
+}
+
+.entry-meta { display: none; }
+
+.hentry.type-post .entry-content {
+    width: 100% !important;
+    clear: both !important;    
+}
+
+body.custom-background {
+    font-family: sans-serif !important;
+}
+
+.woocommerce-Price-amount {
+    color: #ec5353 !important;
+    font-size: 18px !important;
 }
 
 /* Start layout for responsive */
@@ -283,6 +322,9 @@ div#post-24 .entry-header {
 
 /* smartphones, iPhone, portrait 480x320 phones */
 @media only screen and (max-width:640px) { 
+    .storefront-primary-navigation {
+        margin-top: 15px;
+    }    
 
     .social_icons { display: none; }
 
@@ -313,11 +355,7 @@ div#post-24 .entry-header {
 
     .footer-widget-3 {
         padding-left: 0;
-    }
-
-    .es_textbox_class {
-        width: 100%;
-    }
+    }    
     
     div#post-24 { 
         padding-top : 0 !important;
