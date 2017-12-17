@@ -56,6 +56,7 @@
 
 .site-footer .footer-widgets {
     display: flex;
+    border-bottom: 2px dotted rgba(251, 247, 247, 0.1);
 }
 
 .site-footer .social_icons { padding-top: 20px }
@@ -65,8 +66,8 @@
 .footer-widget-2 {
     margin: 0 20px;
     padding: 0 40px;
-    border-left: 2px dotted rgba(0, 0, 0, 0.1);
-    border-right: 2px dotted rgba(0, 0, 0, 0.1);
+    border-left: 2px dotted rgba(251, 247, 247, 0.1);
+    border-right: 2px dotted rgba(251, 247, 247, 0.1);
 }
 
 .footer-widget-2 span.header, .footer-widget-3 span.widget-title {
@@ -151,6 +152,7 @@ div#post-24 .entry-header {
 .wcps-items-price {
     color: #ec5353 !important;
     font-size: 18px !important;
+    text-align: center;
 }
 
 .order-online {
@@ -302,6 +304,10 @@ body.custom-background {
 .woocommerce-Price-amount {
     color: #ec5353 !important;
     font-size: 18px !important;
+}
+
+.wcps-items-title, .wcps-items-price, .wcps-items-cart {
+    text-align: center !important;
 }
 
 /* Start layout for responsive */
