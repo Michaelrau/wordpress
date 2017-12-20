@@ -7,6 +7,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 class es_cls_intermediate {
 	public static function es_subscribers() {
+		global $wpdb;
 		$current_page = isset($_GET['ac']) ? $_GET['ac'] : '';
 		switch($current_page) {
 			case 'add':

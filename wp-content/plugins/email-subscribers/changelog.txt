@@ -4,6 +4,10 @@ Author		: Icegram
 Author URI	: https://www.icegram.com/
 License		: GPLv3
 
+************************************************************Version 3.4.6************************************************************
+
+* Fix: Fatal error while accessing subscribers export screen
+
 ************************************************************Version 3.4.5************************************************************
 
 * Fix: Not throwing 'Invalid Email' error for sanitized emails

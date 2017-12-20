@@ -977,7 +977,7 @@ msgstr ""
 #: ../subscribers/view-subscriber-show.php:289 ../classes/es-register.php:1068 ..
 #: /classes/es-loadwidget.php:28
 msgid "Name"
-msgstr "Họ Tên"
+msgstr ""
 
 #: ../subscribers/view-subscriber-show.php:291
 msgid "Group"
@@ -2061,7 +2061,7 @@ msgstr ""
 
 #: ../classes/es-register.php:1073 ../classes/es-loadwidget.php:33
 msgid "Email *"
-msgstr "Thư điện tử *"
+msgstr ""
 
 #: ../classes/es-register.php:1116
 msgid "Widget Title"

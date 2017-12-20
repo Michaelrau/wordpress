@@ -5,7 +5,7 @@ Author URI: https://www.icegram.com/
 Tags: email marketing, email newsletter form, email signup, email widget, newsletter, newsletter signup, subscribe, subscription form, bulk emails, signup form, list builder, lead generation
 Requires at least: 3.4
 Tested up to: 4.9.1
-Stable tag: 3.4.5
+Stable tag: 3.4.6
 License: GPLv3
 License URI: http://www.gnu.org/licenses
 
@@ -315,6 +315,10 @@ Use our free plugin [Email Subscribers - Group Selector](https://wordpress.org/p
 11. Admin page - Delivery Report of emails i.e. email sent, opened, viewed status, viewed date
 
 == Changelog ==
+
+= 3.4.6 (19.12.2017) =
+
+* Fix: Fatal error while accessing subscribers export screen
 
 = 3.4.5 (15.12.2017) =
 
@@ -696,6 +700,10 @@ Use our free plugin [Email Subscribers - Group Selector](https://wordpress.org/p
 For the changelog of earlier versions, please refer to the separate [changelog.txt](https://plugins.svn.wordpress.org/email-subscribers/trunk/changelog.txt) file.
 
 == Upgrade Notice ==
+
+= 3.4.6 (19.12.2017) =
+
+* Fix: Fatal error while accessing subscribers export screen
 
 = 3.4.5 (15.12.2017) =
 
