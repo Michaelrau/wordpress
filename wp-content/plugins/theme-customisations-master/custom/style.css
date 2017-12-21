@@ -314,7 +314,7 @@ body.custom-background {
 
 .woocommerce-Price-amount {
     color: #ec5353 !important;
-    font-size: 18px !important;
+    font-size: 18px important;
 }
 
 .wcps-items-title, .wcps-items-price, .wcps-items-cart {
@@ -358,15 +358,27 @@ body.custom-background {
 
     .hot-lines {
         font-weight: bold;
-        font-size: 17px;
-        text-align: center;
+        font-size: 16px;
+        text-align: right;
         color: red;
         padding: 10px 0;        
-    }    
-
-    .menu > ul { display : none !important; }
+    }
     
-    .primary-navigation { display: block !important; }    
+    .woocommerce-Price-amount {
+        font-size: 14px !important;
+    }
+
+    .wcps-container:hover  .owl-nav.middle .owl-next {
+        right: 10px;
+    }
+
+    .wcps-container:hover  .owl-nav.middle .owl-prev {
+        left: 10px;
+    }
+
+    .added_to_cart, .button, button, input[type=button], input[type=reset], input[type=submit] {
+        padding : .4180469716em 0.41575em
+    } 
 
     .wcps-container .wcps-items-title {
         padding: 10px 0px;    
