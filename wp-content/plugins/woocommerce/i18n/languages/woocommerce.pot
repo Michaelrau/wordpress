@@ -8340,7 +8340,7 @@ msgstr ""
 #: includes/class-wc-order-item-shipping.php:181
 #: templates/cart/cart-totals.php:55 templates/cart/cart-totals.php:56
 msgid "Shipping"
-msgstr ""
+msgstr "Phí Giao Hàng"
 
 #: includes/admin/class-wc-admin-setup-wizard.php:109
 msgid "Extras"
@@ -24321,7 +24321,7 @@ msgstr ""
 msgctxt "shipping packages"
 msgid "Shipping"
 msgid_plural "Shipping %d"
-msgstr[0] ""
+msgstr[0] "Phí giao hàng %d"
 msgstr[1] ""
 
 #: includes/wc-template-functions.php:1591

@@ -2372,7 +2372,7 @@ msgstr "Mã giảm giá : %s"
 msgctxt "shipping packages"
 msgid "Shipping"
 msgid_plural "Shipping %d"
-msgstr[0] "Giao hàng %d"
+msgstr[0] "Phí Giao Hàng %d"
 
 #. translators: %s: IP address
 #: includes/vendor/wp-rest-functions.php:209
@@ -9591,14 +9591,14 @@ msgstr "Số lượng"
 msgid "Subtotal"
 msgstr "Tổng cộng"
 
-#: templates/cart/cart-totals.php:28
+#: templates/cart/c:28
 msgid "Cart totals"
 msgstr "Tổng số lượng"
 
 #. translators: %s: field name
 #: includes/class-wc-checkout.php:621
 msgid "Shipping %s"
-msgstr "Giao hàng %s"
+msgstr "Phí giao hàng %s"
 
 #: includes/wc-template-functions.php:2717
 msgid "Your cart is currently empty."

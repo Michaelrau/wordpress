@@ -6,3 +6,13 @@
 
 2017-12-22T09:20:56+00:00 CRITICAL Call to a member function have_posts() on null
 
+2017-12-23T03:14:40+00:00 CRITICAL Uncaught Error: Call to undefined function the_post_title() in /opt/lampp/htdocs/wordpress/wp-content/plugins/ajax-load-more/core/repeater/default.php:3
+Stack trace:
+#0 /opt/lampp/htdocs/wordpress/wp-content/plugins/ajax-load-more/ajax-load-more.php(779): include()
+#1 /opt/lampp/htdocs/wordpress/wp-includes/class-wp-hook.php(286): AjaxLoadMore->alm_query_posts('')
+#2 /opt/lampp/htdocs/wordpress/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /opt/lampp/htdocs/wordpress/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /opt/lampp/htdocs/wordpress/wp-admin/admin-ajax.php(112): do_action('wp_ajax_nopriv_...')
+#5 {main}
+  thrown
+

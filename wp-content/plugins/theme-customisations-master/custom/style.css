@@ -328,6 +328,55 @@ body.custom-background {
     font-size: 32px !important;  
 }
 
+.alm-reveal {
+    display: flex;
+    border: 1px dotted;
+    margin: 10px 0;
+}
+
+.alm-btn-wrap {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.alm-reveal .wcps-items-thumb {
+    padding: 10px;
+}
+
+.alm-reveal .wcps-items-title {
+    padding: 10px 0px;
+}
+
+.alm-reveal .wcps-items-price {
+    padding: 5px 0px;
+}
+
+.alm-reveal .wcps-items-cart {
+    padding: 10px 0px;
+}
+
+.alm-reveal .wcps-items-title a {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: normal;
+    text-decoration: none;
+}
+
+.alm-reveal amount {
+    color: #ec5353 !important;
+    font-size: 18px;
+}
+
+.alm-load-more-btn {
+    padding : 5px 30px;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+#menu-item-200 {
+    display: none;
+}
+
 /* Start layout for responsive */
 
 @media only screen and (max-width:320px) {    
@@ -347,6 +396,19 @@ body.custom-background {
 /* smartphones, iPhone, portrait 480x320 phones */
 @media only screen and (max-width:640px) {
 
+    .menu-item-63 {
+        display: none;
+    }
+
+    #menu-item-200 {
+        display: block;
+    }
+    
+    .alm-reveal amount {
+        color: #ec5353 !important;
+        font-size: 14px;
+    }
+    
     .summary p {
         margin : 0 !important;
     }

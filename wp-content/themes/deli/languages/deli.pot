@@ -23,3 +23,10 @@ msgstr ""
 #: inc/customizer/controls.php:28
 msgid "For use with the Sticky Header option"
 msgstr ""
+
+#: includes/wc-cart-functions.php:226
+msgctxt "shipping packages"
+msgid "Shipping"
+msgid_plural "Shipping %d"
+msgstr[0] "Phí Giao Hàng %d"
+
