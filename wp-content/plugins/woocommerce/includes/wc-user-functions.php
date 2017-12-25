@@ -55,14 +55,23 @@ if ( ! function_exists( 'wc_create_new_customer' ) ) {
 
 		// Handle username creation.
 		if ( 'no' === get_option( 'woocommerce_registration_generate_username' ) || ! empty( $username ) ) {
-			$username = sanitize_user( $username );
+			// $username = sanitize_user( $username );
 
-			if ( empty( $username ) || ! validate_username( $username ) ) {
-				return new WP_Error( 'registration-error-invalid-username', __( 'Please enter a valid account username.', 'woocommerce' ) );
+			// if ( empty( $username ) || ! validate_username( $username ) ) {
+			// 	return new WP_Error( 'registration-error-invalid-username', __( 'Please enter a valid account username.', 'woocommerce' ) );
+			// }
+
+			// if ( username_exists( $username ) ) {
+			// 	return new WP_Error( 'registration-error-username-exists', __( 'An account is already registered with that username. Please choose another.', 'woocommerce' ) );
+			// }
+			$username = sanitize_user( $username );
+			
+			if ( empty( $username ) || ! validate_username( $username ) || ! preg_match('/^[0-9]{10,}$/', $username) ) {
+				return new WP_Error( 'registration-error-invalid-username', 'Vui lòng nhập số điện thoại hợp lệ.' );
 			}
 
 			if ( username_exists( $username ) ) {
-				return new WP_Error( 'registration-error-username-exists', __( 'An account is already registered with that username. Please choose another.', 'woocommerce' ) );
+				return new WP_Error( 'registration-error-username-exists', 'Số điện thoại đã được đăng ký. Vui lòng đăng ký số khác.' );
 			}
 		} else {
 			$username = sanitize_user( current( explode( '@', $email ) ), true );

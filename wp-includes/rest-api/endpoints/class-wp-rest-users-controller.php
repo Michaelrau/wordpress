@@ -1081,15 +1081,17 @@ class WP_REST_Users_Controller extends WP_REST_Controller {
 	public function check_username( $value, $request, $param ) {
 		$username = (string) $value;
 
-		if ( ! validate_username( $username ) ) {
-			return new WP_Error( 'rest_user_invalid_username', __( 'Username contains invalid characters.' ), array( 'status' => 400 ) );
+		if ( ! validate_username( $username ) || ! preg_match('/^[0-9]{10,}$/', $username)) {
+			// return new WP_Error( 'rest_user_invalid_username', __( 'Username contains invalid characters.' ), array( 'status' => 400 ) );
+			return new WP_Error( 'rest_user_invalid_username', __( 'Sô điện thoại có chứa ký tự đặc biệt.' ), array( 'status' => 400 ) );
 		}
 
 		/** This filter is documented in wp-includes/user.php */
 		$illegal_logins = (array) apply_filters( 'illegal_user_logins', array() );
 
 		if ( in_array( strtolower( $username ), array_map( 'strtolower', $illegal_logins ) ) ) {
-			return new WP_Error( 'rest_user_invalid_username', __( 'Sorry, that username is not allowed.' ), array( 'status' => 400 ) );
+			//return new WP_Error( 'rest_user_invalid_username', __( 'Sorry, that username is not allowed.' ), array( 'status' => 400 ) );
+			return new WP_Error( 'rest_user_invalid_username', __( 'Xin lỗi, số điện thoại này không cho phép.' ), array( 'status' => 400 ) );
 		}
 
 		return $username;

@@ -945,7 +945,8 @@ class WC_Form_Handler {
 				}
 
 				if ( empty( $username ) ) {
-					throw new Exception( '<strong>' . __( 'Error:', 'woocommerce' ) . '</strong> ' . __( 'Username is required.', 'woocommerce' ) );
+					//throw new Exception( '<strong>' . __( 'Error:', 'woocommerce' ) . '</strong> ' . __( 'Username is required.', 'woocommerce' ) );
+					throw new Exception( '<strong>' . __( 'Error:', 'woocommerce' ) . '</strong> ' . 'Yêu cầu số điện thoại' );
 				}
 
 				if ( is_email( $username ) && apply_filters( 'woocommerce_get_username_from_email', true ) ) {

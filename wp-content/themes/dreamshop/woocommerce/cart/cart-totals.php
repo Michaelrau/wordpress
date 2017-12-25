@@ -52,7 +52,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 		<?php elseif ( WC()->cart->needs_shipping() && 'yes' === get_option( 'woocommerce_enable_shipping_calc' ) ) : ?>
 
 			<tr class="shipping">
-				<th><?php _e( 'Shipping', 'dreamshop' ); ?></th>
+				<th>Phí giao hàng<?php //_e( 'Shipping', 'dreamshop' ); ?></th>
 				<td data-title="<?php esc_attr_e( 'Shipping', 'dreamshop' ); ?>"><?php woocommerce_shipping_calculator(); ?></td>
 			</tr>
 

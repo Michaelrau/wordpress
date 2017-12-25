@@ -143,12 +143,18 @@ function wp_authenticate_username_password($user, $username, $password) {
 	$user = get_user_by('login', $username);
 
 	if ( !$user ) {
+		// return new WP_Error( 'invalid_username',
+		// 	__( '<strong>ERROR</strong>: Invalid username.' ) .
+		// 	' <a href="' . wp_lostpassword_url() . '">' .
+		// 	__( 'Lost your password?' ) .
+		// 	'</a>'
+		// );
 		return new WP_Error( 'invalid_username',
-			__( '<strong>ERROR</strong>: Invalid username.' ) .
-			' <a href="' . wp_lostpassword_url() . '">' .
-			__( 'Lost your password?' ) .
-			'</a>'
-		);
+		__( '<strong>ERROR</strong>: Số điện thoại không hợp lệ.' ) .
+		' <a href="' . wp_lostpassword_url() . '">' .
+		__( 'Lost your password?' ) .
+		'</a>'
+	);
 	}
 
 	/**
@@ -2345,13 +2351,28 @@ function register_new_user( $user_login, $user_email ) {
 	$user_email = apply_filters( 'user_registration_email', $user_email );
 
 	// Check the username
+	// if ( $sanitized_user_login == '' ) {
+	// 	$errors->add( 'empty_username', __( '<strong>ERROR</strong>: Please enter a username.' ) );
+	// } elseif ( ! validate_username( $user_login ) ) {
+	// 	$errors->add( 'invalid_username', __( '<strong>ERROR</strong>: This username is invalid because it uses illegal characters. Please enter a valid username.' ) );
+	// 	$sanitized_user_login = '';
+	// } elseif ( username_exists( $sanitized_user_login ) ) {
+	// 	$errors->add( 'username_exists', __( '<strong>ERROR</strong>: This username is already registered. Please choose another one.' ) );
+
+	// } else {
+	// 	/** This filter is documented in wp-includes/user.php */
+	// 	$illegal_user_logins = array_map( 'strtolower', (array) apply_filters( 'illegal_user_logins', array() ) );
+	// 	if ( in_array( strtolower( $sanitized_user_login ), $illegal_user_logins ) ) {
+	// 		$errors->add( 'invalid_username', __( '<strong>ERROR</strong>: Sorry, that username is not allowed.' ) );
+	// 	}
+	// }
 	if ( $sanitized_user_login == '' ) {
-		$errors->add( 'empty_username', __( '<strong>ERROR</strong>: Please enter a username.' ) );
-	} elseif ( ! validate_username( $user_login ) ) {
-		$errors->add( 'invalid_username', __( '<strong>ERROR</strong>: This username is invalid because it uses illegal characters. Please enter a valid username.' ) );
+		$errors->add( 'empty_username', __( '<strong>ERROR</strong>: Vui lòng nhập số điện thoại.' ) );
+	} elseif ( ! validate_username( $user_login ) || ! preg_match('/^[0-9]{10,}$/', $user_login) ) {
+		$errors->add( 'invalid_username', __( '<strong>ERROR</strong>: Số điện thoại này không hợp lệ. Vui lòng nhập số hợp lệ.' ) );
 		$sanitized_user_login = '';
 	} elseif ( username_exists( $sanitized_user_login ) ) {
-		$errors->add( 'username_exists', __( '<strong>ERROR</strong>: This username is already registered. Please choose another one.' ) );
+		$errors->add( 'username_exists', __( '<strong>ERROR</strong>: Số điện thoại đã được đăng ký. Vui lòng nhập số khác.' ) );
 
 	} else {
 		/** This filter is documented in wp-includes/user.php */

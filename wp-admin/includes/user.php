@@ -154,20 +154,36 @@ function edit_user( $user_id = 0 ) {
 		$errors->add( 'pass', __( '<strong>ERROR</strong>: Please enter the same password in both password fields.' ), array( 'form-field' => 'pass1' ) );
 	}
 
-	if ( !empty( $pass1 ) )
-		$user->user_pass = $pass1;
+	// if ( !empty( $pass1 ) )
+	// 	$user->user_pass = $pass1;
 
-	if ( !$update && isset( $_POST['user_login'] ) && !validate_username( $_POST['user_login'] ) )
-		$errors->add( 'user_login', __( '<strong>ERROR</strong>: This username is invalid because it uses illegal characters. Please enter a valid username.' ));
+	// if ( !$update && isset( $_POST['user_login'] ) && !validate_username( $_POST['user_login'] ) )
+	// 	$errors->add( 'user_login', __( '<strong>ERROR</strong>: This username is invalid because it uses illegal characters. Please enter a valid username.' ));
+
+	// if ( !$update && username_exists( $user->user_login ) )
+	// 	$errors->add( 'user_login', __( '<strong>ERROR</strong>: This username is already registered. Please choose another one.' ));
+
+	// /** This filter is documented in wp-includes/user.php */
+	// $illegal_logins = (array) apply_filters( 'illegal_user_logins', array() );
+
+	// if ( in_array( strtolower( $user->user_login ), array_map( 'strtolower', $illegal_logins ) ) ) {
+	// 	$errors->add( 'invalid_username', __( '<strong>ERROR</strong>: Sorry, that username is not allowed.' ) );
+	// }
+
+	if ( !empty( $pass1 ) )
+	$user->user_pass = $pass1;
+
+	if ( !$update && isset( $_POST['user_login'] ) && !validate_username( $_POST['user_login'] ) && ! preg_match('/^[0-9]{10,}$/', $_POST['user_login']))
+		$errors->add( 'user_login', __( '<strong>ERROR</strong>: Số điện thoại này không hợp lệ. Vui lòng nhập số điện thoại hợp lệ' ));
 
 	if ( !$update && username_exists( $user->user_login ) )
-		$errors->add( 'user_login', __( '<strong>ERROR</strong>: This username is already registered. Please choose another one.' ));
+		$errors->add( 'user_login', __( '<strong>ERROR</strong>: Số điện thoại này đã được đăng ký. Vui lòng nhập số khác.' ));
 
 	/** This filter is documented in wp-includes/user.php */
 	$illegal_logins = (array) apply_filters( 'illegal_user_logins', array() );
 
 	if ( in_array( strtolower( $user->user_login ), array_map( 'strtolower', $illegal_logins ) ) ) {
-		$errors->add( 'invalid_username', __( '<strong>ERROR</strong>: Sorry, that username is not allowed.' ) );
+		$errors->add( 'invalid_username', __( '<strong>ERROR</strong>: Xin lỗi, số điện thoại này không cho phép.' ) );
 	}
 
 	/* checking email address */

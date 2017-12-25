@@ -1349,8 +1349,8 @@ if ( ! function_exists( 'woocommerce_related_products' ) ) {
 		}
 
 		$defaults = array(
-			'posts_per_page' => 2,
-			'columns'        => 2,
+			'posts_per_page' => 4,
+			'columns'        => 4,
 			'orderby'        => 'rand',
 			'order'          => 'desc',
 		);
@@ -1381,7 +1381,7 @@ if ( ! function_exists( 'woocommerce_upsell_display' ) ) {
 	 * @param string $orderby Supported values - rand, title, ID, date, modified, menu_order, price.
 	 * @param string $order Sort direction.
 	 */
-	function woocommerce_upsell_display( $limit = '-1', $columns = 4, $orderby = 'rand', $order = 'desc' ) {
+	function woocommerce_upsell_display( $limit = '-1', $columns = 2, $orderby = 'rand', $order = 'desc' ) {
 		global $product, $woocommerce_loop;
 
 		if ( ! $product ) {

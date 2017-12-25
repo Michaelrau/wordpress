@@ -321,6 +321,7 @@ body.custom-background {
     text-align: center !important;
 }
 
+
 .single-product div.product .summary .price {
     background-color: transparent !important;    
     display: block !important;
@@ -377,6 +378,38 @@ body.custom-background {
     display: none;
 }
 
+.owl-wrapper {
+    display: flex !important;
+}
+
+.owl-item {
+    width: 50% !important;
+}
+
+.wrps_related_products.wrps_theme_box .wpb_wrps_title  a {
+    font-size: 16px !important;
+    font-weight: bold !important;
+    line-height: normal !important;
+    text-decoration: none !important;
+}
+
+.wpb_wrps_price {
+    font-size: 18px !important;
+    color: #ec5353 !important;
+}
+
+.wrps_related_products.wrps_theme_box .wpb_wrps_cart_btn a.button, .wrps_related_products.wrps_theme_box .wpb_wrps_cart_btn a.added_to_cart {
+    box-shadow: none;
+    border-radius: 3px;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Oswald", sans-serif;
+    background-color: #0e7784;
+    border-color: #0e7784;
+    color: #ffffff;
+    padding: .6180469716em 1.41575em;    
+}
+
 /* Start layout for responsive */
 
 @media only screen and (max-width:320px) {    
@@ -394,7 +427,22 @@ body.custom-background {
 }
 
 /* smartphones, iPhone, portrait 480x320 phones */
-@media only screen and (max-width:640px) {
+@media only screen and (max-width:640px) {  
+
+    .menu-toggle {
+        padding: 20px !important;
+    }
+        
+    .wpb_wrps_price {
+        font-size: 14px !important;
+        color: #ec5353 !important;
+    }
+    
+    
+    .wrps_related_products.wrps_theme_box .wpb_wrps_cart_btn a.button, .wrps_related_products.wrps_theme_box .wpb_wrps_cart_btn a.added_to_cart {
+        padding: .4180469716em 0.41575em;        
+    }
+    
 
     .menu-item-63 {
         display: none;
@@ -435,8 +483,8 @@ body.custom-background {
 
     .hot-lines {
         font-weight: bold;
-        font-size: 16px;
-        text-align: right;
+        font-size: 18px;
+        text-align: left;
         color: red;
         padding: 10px 0;        
     }
