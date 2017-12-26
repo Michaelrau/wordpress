@@ -329,41 +329,9 @@ body.custom-background {
     font-size: 32px !important;  
 }
 
-.alm-reveal {
-    display: flex;
-    border: 1px dotted;
-    margin: 10px 0;
-}
 
-.alm-btn-wrap {
-    text-align: center;
-    margin-top: 20px;
-}
 
-.alm-reveal .wcps-items-thumb {
-    padding: 10px;
-}
-
-.alm-reveal .wcps-items-title {
-    padding: 10px 0px;
-}
-
-.alm-reveal .wcps-items-price {
-    padding: 5px 0px;
-}
-
-.alm-reveal .wcps-items-cart {
-    padding: 10px 0px;
-}
-
-.alm-reveal .wcps-items-title a {
-    font-size: 16px;
-    font-weight: bold;
-    line-height: normal;
-    text-decoration: none;
-}
-
-.alm-reveal amount {
+.alm-reveal > amount {
     color: #ec5353 !important;
     font-size: 18px;
 }
@@ -410,6 +378,8 @@ body.custom-background {
     padding: .6180469716em 1.41575em;    
 }
 
+.row-small { display: none  !important; }
+
 /* Start layout for responsive */
 
 @media only screen and (max-width:320px) {    
@@ -428,6 +398,10 @@ body.custom-background {
 
 /* smartphones, iPhone, portrait 480x320 phones */
 @media only screen and (max-width:640px) {  
+
+    .row-large { display: none !important; }
+
+    .row-small { display: flex !important; }
 
     .menu-toggle {
         padding: 20px !important;
