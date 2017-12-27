@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Dec 27, 2017 at 04:50 AM
+-- Generation Time: Dec 27, 2017 at 05:00 AM
 -- Server version: 10.1.13-MariaDB
 -- PHP Version: 5.6.20
 
@@ -126,19 +126,14 @@ CREATE TABLE `wp_es_deliverreport` (
 --
 
 INSERT INTO `wp_es_deliverreport` (`es_deliver_id`, `es_deliver_sentguid`, `es_deliver_emailid`, `es_deliver_emailmail`, `es_deliver_sentdate`, `es_deliver_status`, `es_deliver_viewdate`, `es_deliver_sentstatus`, `es_deliver_senttype`) VALUES
-(1, 'alzsyq-bytega-naiefg-xmkwoe-wbgxqr', 2, 'a.example@example.com', '2017-12-14 16:01:38', 'Nodata', '0000-00-00 00:00:00', 'Sent', 'Immediately'),
 (2, 'alzsyq-bytega-naiefg-xmkwoe-wbgxqr', 3, 'vdthanh@tma.com.vn', '2017-12-14 16:01:47', 'Nodata', '0000-00-00 00:00:00', 'Sent', 'Immediately'),
 (3, 'alzsyq-bytega-naiefg-xmkwoe-wbgxqr', 1, 'wpdemo2000@gmail.com', '2017-12-14 16:01:54', 'Nodata', '0000-00-00 00:00:00', 'Sent', 'Immediately'),
-(4, 'vohbea-asgdvn-kfitml-mlckav-qhejdu', 2, 'a.example@example.com', '2017-12-16 04:09:05', 'Nodata', '0000-00-00 00:00:00', 'Sent', 'Immediately'),
 (5, 'vohbea-asgdvn-kfitml-mlckav-qhejdu', 3, 'vdthanh@tma.com.vn', '2017-12-16 04:09:11', 'Nodata', '0000-00-00 00:00:00', 'Sent', 'Immediately'),
 (6, 'vohbea-asgdvn-kfitml-mlckav-qhejdu', 1, 'wpdemo2000@gmail.com', '2017-12-16 04:09:17', 'Nodata', '0000-00-00 00:00:00', 'Sent', 'Immediately'),
-(7, 'ycrlia-eaxynl-gwcukm-fxaysw-kpfenq', 2, 'a.example@example.com', '2017-12-16 04:12:53', 'Nodata', '0000-00-00 00:00:00', 'Sent', 'Immediately'),
 (8, 'ycrlia-eaxynl-gwcukm-fxaysw-kpfenq', 3, 'vdthanh@tma.com.vn', '2017-12-16 04:12:58', 'Nodata', '0000-00-00 00:00:00', 'Sent', 'Immediately'),
 (9, 'ycrlia-eaxynl-gwcukm-fxaysw-kpfenq', 1, 'wpdemo2000@gmail.com', '2017-12-16 04:13:03', 'Nodata', '0000-00-00 00:00:00', 'Sent', 'Immediately'),
-(10, 'srbwgo-mfhlcv-becqus-rydgax-alefnv', 2, 'a.example@example.com', '2017-12-16 04:14:47', 'Nodata', '0000-00-00 00:00:00', 'Sent', 'Immediately'),
 (11, 'srbwgo-mfhlcv-becqus-rydgax-alefnv', 3, 'vdthanh@tma.com.vn', '2017-12-16 04:14:52', 'Nodata', '0000-00-00 00:00:00', 'Sent', 'Immediately'),
 (12, 'srbwgo-mfhlcv-becqus-rydgax-alefnv', 1, 'wpdemo2000@gmail.com', '2017-12-16 04:14:57', 'Nodata', '0000-00-00 00:00:00', 'Sent', 'Immediately'),
-(13, 'hsfivu-phogfr-zobayl-thakpz-vqldmp', 2, 'a.example@example.com', '2017-12-16 17:05:01', 'Nodata', '0000-00-00 00:00:00', 'Sent', 'Immediately'),
 (14, 'hsfivu-phogfr-zobayl-thakpz-vqldmp', 3, 'vdthanh@tma.com.vn', '2017-12-16 17:05:08', 'Nodata', '0000-00-00 00:00:00', 'Sent', 'Immediately'),
 (15, 'hsfivu-phogfr-zobayl-thakpz-vqldmp', 1, 'wpdemo2000@gmail.com', '2017-12-16 17:05:14', 'Nodata', '0000-00-00 00:00:00', 'Sent', 'Immediately');
 
@@ -165,7 +160,6 @@ CREATE TABLE `wp_es_emaillist` (
 
 INSERT INTO `wp_es_emaillist` (`es_email_id`, `es_email_name`, `es_email_mail`, `es_email_status`, `es_email_created`, `es_email_viewcount`, `es_email_group`, `es_email_guid`) VALUES
 (1, 'Admin', 'wpdemo2000@gmail.com', 'Confirmed', '2017-12-14 03:24:27', '0', 'Public', 'cznajy-exgmtw-atxncj-jvzrua-cfjkin'),
-(2, 'Example', 'a.example@example.com', 'Confirmed', '2017-12-14 03:24:27', '0', 'Public', 'naumrv-izengf-jexwit-qwpvcf-ztldki'),
 (3, 'Thanh', 'vdthanh@tma.com.vn', 'Confirmed', '2017-12-14 03:34:55', '0', 'Public', 'plwzib-opbaqs-rmqhcl-zhrxjn-vsgbtx');
 
 -- --------------------------------------------------------
@@ -260,10 +254,10 @@ CREATE TABLE `wp_options` (
 --
 
 INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`) VALUES
-(1, 'siteurl', 'http://localhost/wordpress', 'yes'),
-(2, 'home', 'http://localhost/wordpress', 'yes'),
+(1, 'siteurl', 'http://doivothuong.com', 'yes'),
+(2, 'home', 'http://doivothuong.com', 'yes'),
 (3, 'blogname', 'YADINGJI', 'yes'),
-(4, 'blogdescription', 'Just another WordPress site', 'yes'),
+(4, 'blogdescription', 'Vịt quay JADINGJI', 'yes'),
 (5, 'users_can_register', '1', 'yes'),
 (6, 'admin_email', 'wpdemo2000@gmail.com', 'yes'),
 (7, 'start_of_week', '1', 'yes'),
@@ -827,7 +821,7 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (2178, 'product_slider_layout_hover', 'a:2:{s:4:"flat";a:1:{s:9:"read_more";a:2:{s:4:"name";s:9:"Read more";s:3:"css";s:84:"display: block;font-size: 12px;font-weight: bold;padding: 0 10px;text-align: center;";}}s:11:"flat-center";a:1:{s:9:"read_more";a:2:{s:4:"name";s:9:"Read more";s:3:"css";s:84:"display: block;font-size: 12px;font-weight: bold;padding: 0 10px;text-align: center;";}}}', 'yes'),
 (2185, '_transient_timeout_wc_related_156', '1514368607', 'no'),
 (2186, '_transient_wc_related_156', 'a:0:{}', 'no'),
-(2193, '_transient_timeout_wplc_is_admin_logged_in', '1514346665', 'no'),
+(2193, '_transient_timeout_wplc_is_admin_logged_in', '1514346952', 'no'),
 (2194, '_transient_wplc_is_admin_logged_in', '1', 'no'),
 (2195, '_site_transient_timeout_community-events-4501c091b0366d76ea3218b6cfdd8097', '1514385908', 'no'),
 (2196, '_site_transient_community-events-4501c091b0366d76ea3218b6cfdd8097', 'a:2:{s:8:"location";a:1:{s:2:"ip";s:2:"::";}s:6:"events";a:0:{}}', 'no'),
@@ -2637,7 +2631,7 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (1926, 206, '_edit_last', '1'),
 (1927, 206, 'product_slider_meta_options', 'a:18:{s:10:"post_types";a:3:{i:0;s:7:"product";i:1;s:17:"product_variation";i:2;s:10:"shop_order";}s:11:"post_status";a:1:{i:0;s:7:"publish";}s:14:"posts_per_page";s:2:"10";s:11:"query_order";s:4:"DESC";s:13:"query_orderby";a:1:{i:0;s:4:"date";}s:22:"query_orderby_meta_key";s:0:"";s:6:"layout";a:2:{s:7:"content";s:14:"wc-center-cart";s:5:"hover";s:4:"flat";}s:4:"skin";s:15:"contentinbottom";s:4:"item";a:3:{s:7:"desktop";s:1:"4";s:6:"tablet";s:1:"3";s:6:"mobile";s:1:"2";}s:6:"height";a:2:{s:5:"style";s:11:"auto_height";s:12:"fixed_height";s:5:"180px";}s:17:"featured_img_size";s:6:"medium";s:12:"media_source";a:3:{s:14:"featured_image";a:3:{s:2:"id";s:14:"featured_image";s:5:"title";s:14:"Featured Image";s:7:"checked";s:3:"yes";}s:11:"first_image";a:3:{s:2:"id";s:11:"first_image";s:5:"title";s:25:"First images from content";s:7:"checked";s:3:"yes";}s:11:"empty_thumb";a:3:{s:2:"id";s:11:"empty_thumb";s:5:"title";s:15:"Empty thumbnail";s:7:"checked";s:3:"yes";}}s:6:"margin";s:4:"10px";s:9:"container";a:3:{s:7:"padding";s:4:"10px";s:8:"bg_color";s:4:"#fff";s:8:"bg_image";s:0:"";}s:14:"slider_options";a:15:{s:19:"navigation_position";s:6:"middle";s:17:"slider_pagination";s:5:"false";s:13:"navigation_bg";s:7:"#35a2ff";s:20:"pagination_bullet_bg";s:7:"#35a2ff";s:13:"slider_enable";s:4:"true";s:15:"slider_autoplay";s:4:"true";s:17:"slider_navigation";s:4:"true";s:10:"hover_stop";s:4:"true";s:10:"slideSpeed";s:3:"500";s:15:"paginationSpeed";s:3:"500";s:11:"rewindSpeed";s:3:"500";s:8:"lazyLoad";s:4:"true";s:17:"paginationNumbers";s:5:"false";s:9:"touchDrag";s:4:"true";s:9:"mouseDrag";s:4:"true";}s:10:"nav_bottom";a:2:{s:16:"navigation_theme";s:5:"round";s:16:"pagination_theme";s:5:"round";}s:9:"custom_js";s:27:"/*Write your js code here*/";s:10:"custom_css";s:28:"/*Write your CSS code here*/";}'),
 (1930, 209, '_ywcps_free_slider_id', '209'),
-(1937, 210, '_edit_lock', '1514346600:1'),
+(1937, 210, '_edit_lock', '1514346882:1'),
 (1938, 210, '_edit_last', '1'),
 (1939, 210, 'product_slider_meta_options', 'a:18:{s:10:"post_types";a:1:{i:0;s:4:"post";}s:11:"post_status";a:1:{i:0;s:7:"pending";}s:14:"posts_per_page";s:2:"10";s:11:"query_order";s:4:"DESC";s:13:"query_orderby";a:1:{i:0;s:4:"date";}s:22:"query_orderby_meta_key";s:0:"";s:6:"layout";a:2:{s:7:"content";s:11:"flat-center";s:5:"hover";s:4:"flat";}s:4:"skin";s:15:"contentinbottom";s:4:"item";a:3:{s:7:"desktop";s:1:"3";s:6:"tablet";s:1:"3";s:6:"mobile";s:1:"2";}s:6:"height";a:2:{s:5:"style";s:11:"auto_height";s:12:"fixed_height";s:5:"180px";}s:17:"featured_img_size";s:6:"medium";s:12:"media_source";a:3:{s:14:"featured_image";a:3:{s:2:"id";s:14:"featured_image";s:5:"title";s:14:"Featured Image";s:7:"checked";s:3:"yes";}s:11:"first_image";a:3:{s:2:"id";s:11:"first_image";s:5:"title";s:25:"First images from content";s:7:"checked";s:3:"yes";}s:11:"empty_thumb";a:3:{s:2:"id";s:11:"empty_thumb";s:5:"title";s:15:"Empty thumbnail";s:7:"checked";s:3:"yes";}}s:6:"margin";s:4:"10px";s:9:"container";a:3:{s:7:"padding";s:4:"10px";s:8:"bg_color";s:4:"#fff";s:8:"bg_image";s:0:"";}s:14:"slider_options";a:15:{s:19:"navigation_position";s:6:"middle";s:17:"slider_pagination";s:5:"false";s:13:"navigation_bg";s:7:"#35a2ff";s:20:"pagination_bullet_bg";s:7:"#35a2ff";s:13:"slider_enable";s:4:"true";s:15:"slider_autoplay";s:4:"true";s:17:"slider_navigation";s:4:"true";s:10:"hover_stop";s:4:"true";s:10:"slideSpeed";s:3:"500";s:15:"paginationSpeed";s:3:"500";s:11:"rewindSpeed";s:3:"500";s:8:"lazyLoad";s:4:"true";s:17:"paginationNumbers";s:5:"false";s:9:"touchDrag";s:4:"true";s:9:"mouseDrag";s:4:"true";}s:10:"nav_bottom";a:2:{s:16:"navigation_theme";s:5:"round";s:16:"pagination_theme";s:5:"round";}s:9:"custom_js";s:27:"/*Write your js code here*/";s:10:"custom_css";s:28:"/*Write your CSS code here*/";}');
 
@@ -3413,14 +3407,7 @@ CREATE TABLE `wp_users` (
 --
 
 INSERT INTO `wp_users` (`ID`, `user_login`, `user_pass`, `user_nicename`, `user_email`, `user_url`, `user_registered`, `user_activation_key`, `user_status`, `display_name`) VALUES
-(1, 'admin', '$P$BnGptf/uf9/bonKIda6EV1g9AYxd3J.', 'admin', 'wpdemo2000@gmail.com', '', '2017-12-08 08:25:07', '', 0, 'admin'),
-(2, 'thanhvd84', '$P$BUKHFNZpIOt8sHPD9Z0RDka4YWJyP1.', 'thanhvd84', 'thanhvd84@gmail.com', '', '2017-12-09 16:29:12', '', 0, 'thanhvd84'),
-(3, 'Vo_Duy_Thanh', '$P$Bw2aKSk803abjmL9Pz/Yxgg29/TGmQ/', 'vo_duy_thanh', 'facebook_user_vo_duy_thanh@example.com', 'https://www.facebook.com/app_scoped_user_id/110795879710668/', '2017-12-10 08:55:04', '', 0, 'Vo Duy Thanh'),
-(4, 'vo-duy-thanh', '$P$BJmnL84hvFQ.jQcFDIY9cBeSTAdFUY.', 'vo-duy-thanh', '55b18194f0a34a7276a6e5d54db3c120@example.com', 'https://www.facebook.com/app_scoped_user_id/110795879710668/', '2017-12-14 02:52:55', '', 0, 'Vo Duy Thanh'),
-(5, '01234808818', '$P$BBnyL4qxWLZnvUEJyQbp/db1jxY2J.0', '01234808818', 'thanhvd84@yahoo.com.vn', '', '2017-12-24 07:19:38', '', 0, 'Vo Thanh'),
-(6, '0909080808', '$P$BDOYHDL0Kt0Jshqfy5PDnPFVUGgKIH1', '0909080808', 'vdthanh@tma.com.vn', '', '2017-12-25 07:00:08', '', 0, '0909080808'),
-(7, 'fsdfasfafas', '$P$BRk/BHdj/jhMEAEiA7RbVnAmhfXgis0', 'fsdfasfafas', 'wpdemo2001@gmail.com', '', '2017-12-25 07:50:33', '', 0, 'fsdfasfafas'),
-(8, '0909080809', '$P$B1w3/vcrXvJly64Ei6ZwdMypctQEDb/', '0909080809', 'thanhvd844@yahoo.com.vn', '', '2017-12-25 08:08:17', '', 0, '0909080809');
+(1, '01234808818', '$P$BnGptf/uf9/bonKIda6EV1g9AYxd3J.', 'admin', 'wpdemo2000@gmail.com', '', '2017-12-08 08:25:07', '', 0, 'admin');
 
 -- --------------------------------------------------------
 
@@ -4132,7 +4119,7 @@ INSERT INTO `wp_wplc_chat_sessions` (`id`, `timestamp`, `name`, `email`, `ip`, `
 (15, '2017-12-26 03:46:43', 'Guest', '887864@887864.com', 'a:2:{s:2:"ip";s:3:"::1";s:10:"user_agent";s:105:"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36";}', 7, '1514277072125', 'http://localhost/wordpress/', '2017-12-26 08:31:15', 0, 'a:3:{s:9:"user_type";i:1;s:14:"user_is_mobile";b:0;s:6:"socket";b:0;}'),
 (16, '2017-12-26 08:54:02', 'Guest', '068875@068875.com', 'a:2:{s:2:"ip";s:3:"::1";s:10:"user_agent";s:105:"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36";}', 7, '1514280247795', 'http://localhost/wordpress/', '2017-12-26 09:24:10', 0, 'a:3:{s:9:"user_type";i:1;s:14:"user_is_mobile";b:0;s:6:"socket";b:0;}'),
 (17, '2017-12-26 09:45:06', 'Guest', '405763@405763.com', 'a:2:{s:2:"ip";s:3:"::1";s:10:"user_agent";s:105:"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36";}', 7, '1514343976709', 'http://localhost/wordpress/', '2017-12-27 03:06:19', 0, 'a:3:{s:9:"user_type";i:1;s:14:"user_is_mobile";b:0;s:6:"socket";b:0;}'),
-(18, '2017-12-27 03:08:19', 'Guest', '161462@161462.com', 'a:2:{s:2:"ip";s:3:"::1";s:10:"user_agent";s:105:"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36";}', 5, '1514346572850', 'http://localhost/wordpress/', '2017-12-27 03:49:34', 0, 'a:3:{s:9:"user_type";i:1;s:14:"user_is_mobile";b:0;s:6:"socket";b:0;}');
+(18, '2017-12-27 03:08:19', 'Guest', '161462@161462.com', 'a:2:{s:2:"ip";s:3:"::1";s:10:"user_agent";s:105:"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36";}', 7, '1514346572850', 'http://localhost/wordpress/', '2017-12-27 03:49:34', 0, 'a:3:{s:9:"user_type";i:1;s:14:"user_is_mobile";b:0;s:6:"socket";b:0;}');
 
 -- --------------------------------------------------------
 
