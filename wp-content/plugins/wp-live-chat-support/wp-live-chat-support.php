@@ -3,7 +3,7 @@
   Plugin Name: WP Live Chat Support
   Plugin URI: http://www.wp-livechat.com
   Description: The easiest to use website live chat plugin. Let your visitors chat with you and increase sales conversion rates with WP Live Chat Support. No third party connection required!
-  Version: 7.1.07
+  Version: 7.1.08
   Author: WP-LiveChat
   Author URI: http://www.wp-livechat.com
   Text Domain: wplivechat
@@ -11,6 +11,9 @@
  */
  
 /**
+ * 7.1.08 - 2018-01-04 - Low priority
+ * Added PHP 7 compatibility
+ * 
  * 7.1.07 - 2017-11-06 - High priority
  * Patched a security exploit found by James @ Pritect, Inc.  Thank you James!
  * 
@@ -568,7 +571,7 @@ global $debug_start;
 $wplc_tblname_offline_msgs = $wpdb->prefix . "wplc_offline_messages";
 $wplc_tblname_chats = $wpdb->prefix . "wplc_chat_sessions";
 $wplc_tblname_msgs = $wpdb->prefix . "wplc_chat_msgs";
-$wplc_version = "7.1.07";
+$wplc_version = "7.1.08";
 
 define('WPLC_BASIC_PLUGIN_DIR', dirname(__FILE__));
 define('WPLC_BASIC_PLUGIN_URL', plugins_url() . "/wp-live-chat-support/");
@@ -1262,7 +1265,12 @@ function wplc_push_js_to_front_basic() {
     if (isset($_COOKIE['wplc_email']) && $_COOKIE['wplc_email'] != "") { $wplc_user_gravatar = sanitize_text_field(md5(strtolower(trim($_COOKIE['wplc_email'])))); } else {$wplc_user_gravatar = ""; }
 
     if ($wplc_user_gravatar != "") { $wplc_grav_image = "<img src='//www.gravatar.com/avatar/$wplc_user_gravatar?s=30' class='wplc-user-message-avatar' />";} else { $wplc_grav_image = "";}
-    wp_localize_script('wplc-user-script', 'wplc_gravatar_image', $wplc_grav_image);
+
+    if ( ! empty($wpcl_grav_image ) ) {
+	  	wp_localize_script( 'wplc-user-script', 'wplc_gravatar_image', $wplc_grav_image ); 
+	} else {
+		wp_localize_script( 'wplc-user-script', 'wplc_gravatar_image', ' ' ); 
+	}
 
     $wplc_hide_chat = "";
     if (get_option('WPLC_HIDE_CHAT') == TRUE) { $wplc_hide_chat = "yes"; } else { $wplc_hide_chat = null; }

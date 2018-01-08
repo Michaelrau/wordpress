@@ -229,6 +229,9 @@ It is highly recommended that you upgrade to WP Live Chat Support version 4.4.0 
 
 == Changelog ==
 
+= 7.1.08 - 2018-01-04 - Low priority =
+* PHP 7 compatibility
+
 = 7.1.07 - 2017-11-06 - High priority =
 * Patched a security exploit found by James @ Pritect, Inc.  Thank you James!
  

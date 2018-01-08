@@ -26,7 +26,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 <div class="woocommerce-billing-fields">
 	<?php if ( wc_ship_to_billing_address_only() && WC()->cart->needs_shipping() ) : ?>
 
-		<h3><?php _e( 'Billing &amp; Shipping', 'woocommerce' ); ?></h3>
+		<h3>Thông tin thanh toán<?php //_e( 'Billing &amp; Shipping', 'woocommerce' ); ?></h3>
 
 	<?php else : ?>
 
@@ -38,7 +38,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 	<div class="woocommerce-billing-fields__field-wrapper">
 		<?php
-			$fields = $checkout->get_checkout_fields( 'billing' );
+			$fields = $checkout->get_checkout_fields( 'billing' );			
 
 			foreach ( $fields as $key => $field ) {
 				if ( isset( $field['country_field'], $fields[ $field['country_field'] ] ) ) {

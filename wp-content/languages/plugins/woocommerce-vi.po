@@ -9537,7 +9537,7 @@ msgstr "Tạo tài khoản mới?"
 
 #: templates/checkout/form-billing.php:29
 msgid "Billing &amp; Shipping"
-msgstr "Thanh toán và giao hàng"
+msgstr "Thông tin giao hàng 1"
 
 #: templates/checkout/cart-errors.php:31
 msgid "Return to cart"

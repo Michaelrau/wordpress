@@ -32,7 +32,7 @@
     font-weight: bold;
     font-size: 23px;
     text-align: right;
-    color: red;    
+    color: white;    
 }
 
 .site-search { display: none !important; }
@@ -385,6 +385,8 @@ body.custom-background {
     margin-top: 15px;
 }
 
+.wc_full_price .amount { color: #fff !important; }
+
 /* Start layout for responsive */
 
 @media only screen and (max-width:320px) {    
@@ -402,7 +404,11 @@ body.custom-background {
 }
 
 /* smartphones, iPhone, portrait 480x320 phones */
-@media only screen and (max-width:640px) {    
+@media only screen and (max-width:640px) { 
+    
+    .site-header .custom-logo-link img {
+        max-width: 96px;
+    }
 
     .twoj_slideshow__nav-wrap {
         display: none !important;
@@ -463,8 +469,8 @@ body.custom-background {
     .hot-lines {
         font-weight: bold;
         font-size: 18px;
-        text-align: left;
-        color: red;
+        text-align: right;
+        color: white;
         padding: 10px 0;        
     }
     
@@ -494,11 +500,7 @@ body.custom-background {
 
     .wcps-container .wcps-items div.wcps-items-price {
         padding: 5px 0px;        
-    }
-
-    .storefront-primary-navigation {
-        margin-top: 15px;
-    }    
+    }        
 
     .social_icons { display: none; }
 
